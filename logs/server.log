@@ -1,0 +1,33 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 219 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.10.9:3000/
+9:45:12 AM [vite] warning: Duplicate "transition" attribute in JSX element
+22 |              transition={{ delay: i * 0.1, duration: 0.5 }}
+23 |              animate={{ y: [0, -8, 0] }}
+24 |              transition={{ duration: 5 + i, repeat: Infinity, ease: 'easeInOut' }}
+   |              ^
+25 |              whileHover={{ y: -10 }}
+26 |              className="rounded-xl bg-white/5 border border-white/10 p-6 backdrop-blur shadow-lg"
+
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/About.jsx
+9:45:13 AM [vite] ✨ new dependencies optimized: framer-motion, lucide-react, @splinetool/react-spline
+9:45:13 AM [vite] ✨ optimized dependencies changed. reloading
+9:45:13 AM [vite] warning: Duplicate "transition" attribute in JSX element
+22 |              transition={{ delay: i * 0.1, duration: 0.5 }}
+23 |              animate={{ y: [0, -8, 0] }}
+24 |              transition={{ duration: 5 + i, repeat: Infinity, ease: 'easeInOut' }}
+   |              ^
+25 |              whileHover={{ y: -10 }}
+26 |              className="rounded-xl bg-white/5 border border-white/10 p-6 backdrop-blur shadow-lg"
+
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/About.jsx
+The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-I4MZPW7S.js?v=35394813" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.
+The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-XPR23Y44.js?v=35394813" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.

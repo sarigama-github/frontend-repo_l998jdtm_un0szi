@@ -1,28 +1,44 @@
-import { useState } from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import Navbar from './components/Navbar';
+import GradientBG from './components/GradientBG';
+import Hero from './components/Hero';
+import Section from './components/Section';
+import About from './components/About';
+import Services from './components/Services';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen bg-slate-950 text-slate-100 relative">
+      <GradientBG />
+      <Navbar />
+      <Hero />
+
+      <Section id="about" title="About Me">
+        <About />
+      </Section>
+
+      <Section id="services" title="My Services">
+        <Services />
+      </Section>
+
+      <Section id="projects" title="My Projects">
+        <Projects />
+      </Section>
+
+      <Section id="contact" title="Contact">
+        <div className="rounded-2xl bg-white/5 border border-white/10 p-8">
+          <p className="text-slate-300">Email: <a className="text-cyan-300 hover:underline" href="mailto:hello@hassen.dev">hello@hassen.dev</a></p>
         </div>
-      </div>
+      </Section>
+
+      <Footer />
+      <ScrollToTop />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
